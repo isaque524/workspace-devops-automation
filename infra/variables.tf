@@ -1,5 +1,5 @@
 variable "resource_group_name" {
-  description = "Nome do resource group"
+  description = "Nome do Resource Group"
   type        = string
   default     = "rg-vm-automation"
 }
@@ -12,9 +12,8 @@ variable "location" {
 
 #senha descartavel apos a criação da vm ela deixa de existir
 variable "admin_password" {
-  description = "Senha do administrador da VM"
+  description = "Senha do usuário administrador"
   type        = string
   sensitive   = true
-  default     = "Cerveja!123!@"
-
+  default     = "Torresmo!@123!(*@)"
 }
