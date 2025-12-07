@@ -7,7 +7,7 @@ variable "resource_group_name" {
 variable "location" {
   description = "Região do Azure"
   type        = string
-  default     = "East US"
+  default     = "eastus2"
 }
 
 #senha descartavel apos a criação da vm ela deixa de existir
