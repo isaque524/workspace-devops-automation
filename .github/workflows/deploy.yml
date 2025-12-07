@@ -176,6 +176,11 @@ jobs:
       - name: Instalar Terraform
         uses: hashicorp/setup-terraform@v3
 
+      - name: Esperar Azure liberar o NIC (180s)
+        run: |
+          echo "Aguardando liberação do NIC (3 minutos)..."
+          sleep 180
+
       - name: Executar Terraform Destroy
         working-directory: infra
         run: |
